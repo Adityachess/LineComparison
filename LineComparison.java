@@ -27,10 +27,14 @@ public class LineComparison {
 		System.out.println("length is:" + len1);
 		System.out.println("length is:" + len2);
 
-		if (len1 == len2) {
-			System.out.println("len1s are equal");
-		} else {
-			System.out.println("both lines are not equal");
+		double compare = Double.compare(len1, len2);
+		if (compare == 0) {
+
+			System.out.println("Length are equal");
+		}
+
+		else {
+			System.out.println("length are not equal");
 		}
 
 	}
